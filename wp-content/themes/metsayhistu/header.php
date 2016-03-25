@@ -56,7 +56,7 @@
     wp_head();
     ?>
 </head>
-
+<div id="opa_div"></div>
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed">
     <div id="header">

@@ -187,7 +187,9 @@ div.menu,
 }
 
 #wrapper {
-    box-shadow: 6px 10px 20px #e0ffaa;
+    opacity: 0.9;
+    position: relative !important;
+    box-shadow: 6px 10px 20px 20px #ffffff;
     background: #ffffff;
     margin-top: 20px;
     padding: 0 20px;
@@ -224,9 +226,38 @@ div.menu,
 -------------------------------------------------------------- */
 
 /* Main global 'theme' and typographic styles */
-body {
-    background-image: url("http://ikt.khk.ee/~ivar.kallejarv/metsayhistu/wp-content/uploads/2016/03/IMG_0128-1.jpg");
+html{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow-y: scroll;
 }
+html::after{
+    height: 100%;
+    width: 100%;
+    content: "";
+    background:url("http://ikt.khk.ee/~ivar.kallejarv/metsayhistu/wp-content/uploads/2016/03/IMG_0128-1.jpg");
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+
+
+}
+/*#opa_div{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: -1em;
+    position: absolute;
+    height: 182%;
+    width: 98%;
+
+    background-color: white;
+    opacity: 0.75;
+}*/
 
 body,
 input,
