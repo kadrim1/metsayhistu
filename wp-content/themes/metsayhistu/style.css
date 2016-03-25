@@ -403,30 +403,39 @@ a:hover {
     margin: 0 0 18px 0;
     */
 }
-
+/*
 #border {
-    border: 3px solid black;
+    border: 3px solid #001600;
+    border-top:3px solid #004300;
     height: 120px;
-}
+    width: 100%;
+}*/
 
 #site-title a {
-    color: #000;
+    color: #001600;
     font-weight: bold;
     text-decoration: none;
+
 }
 
 #title_desc {
+    font-weight: bold;
     height: 120px;
     width: 492px;
-    color: black;
+    color: #001600;
     float: right;
     text-align: center;
+    position: absolute;
+    right: 10%;
+    top: 15%;
+    text-shadow:2px 0 5px #cff8b7;
 }
 
-div#picture {
+
+div#picture img {
     float: left;
     height: 120px;
-    width: 440px;
+    width: 100%;
     border: none;
 }
 
@@ -450,7 +459,7 @@ div#picture {
 -------------------------------------------------------------- */
 
 #access {
-    background: #000;
+    background: #001600;
     display: inline-block;
     float: left;
     margin: 0 auto;
@@ -482,7 +491,7 @@ div.menu li li {
 }
 
 #access a {
-    color: #aaa;
+    color: #cecece;
     display: block;
     line-height: 38px;
     padding: 0 10px;
@@ -490,9 +499,6 @@ div.menu li li {
 }
 
 #access ul ul {
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     display: none;
     position: absolute;
     top: 38px;
@@ -522,7 +528,7 @@ div.menu li li {
 #access li:hover > a,
 #access ul ul :hover > a {
     background: #333;
-    color: #fff;
+    color: #000000;
 }
 
 #access ul li:hover > ul {
@@ -534,7 +540,7 @@ div.menu li li {
 #access ul li.current-menu-ancestor > a,
 #access ul li.current-menu-item > a,
 #access ul li.current-menu-parent > a {
-    color: #fff;
+    color: grey;
 }
 
 * html #access ul li.current_page_item a,
@@ -543,7 +549,7 @@ div.menu li li {
 * html #access ul li.current-menu-item a,
 * html #access ul li.current-menu-parent a,
 * html #access ul li a:hover {
-    color: #fff;
+    color: grey;
 }
 
 /* =Content
@@ -1537,6 +1543,7 @@ code {
 }
 
 #site-description {
+    font-size: 16px;
     -webkit-text-size-adjust: none;
 }
 
