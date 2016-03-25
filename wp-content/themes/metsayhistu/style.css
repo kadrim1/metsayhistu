@@ -224,19 +224,25 @@ div.menu,
 
 /* =Global Elements
 -------------------------------------------------------------- */
+html {
+    background-color: #252d11;
+    opacity: 0.95;
+
+}
 
 /* Main global 'theme' and typographic styles */
-html{
+body {
     height: 100%;
     width: 100%;
     position: relative;
     overflow-y: scroll;
 }
-html::after{
+
+body::after {
     height: 100%;
     width: 100%;
     content: "";
-    background:url("http://ikt.khk.ee/~ivar.kallejarv/metsayhistu/wp-content/uploads/2016/03/IMG_0128-1.jpg");
+    background: url("http://ikt.khk.ee/~ivar.kallejarv/metsayhistu/wp-content/uploads/2016/03/IMG_0128-1.jpg");
     opacity: 0.3;
     top: 0;
     left: 0;
@@ -245,8 +251,8 @@ html::after{
     position: absolute;
     z-index: -1;
 
-
 }
+
 /*#opa_div{
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -447,26 +453,24 @@ a:hover {
 }*/
 
 #site-title a {
-    color: #001600;
+    color: #fff;
     font-weight: bold;
     text-decoration: none;
-
+    opacity: 0.95;
 }
 
 #title_desc {
     font-weight: bold;
     margin-top: -7em;
     margin-right: 2em;
-    color: #001600;
-
+    color: #fff;
+    opacity: 0.95;
     text-align: center;
     position: static;
     float: right;
-
-    text-shadow: 2px 0 5px #cff8b7;
 }
 
-.lcp_catlist{
+.lcp_catlist {
     list-style-type: none;
 }
 
@@ -805,7 +809,6 @@ div.menu li li {
 .entry-content sub {
     font-size: 10px;
 }
-
 
 .entry-content blockquote.left {
     float: left;
@@ -1780,9 +1783,12 @@ code {
         position: static;
         margin-top: 0;
         margin-right: 0;
+        color:black;
     }
 
-
+    #site-title a {
+        color: black;
+    }
 
     #access {
         width: 100%;
