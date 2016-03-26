@@ -32,6 +32,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 body {
     line-height: 1;
+    min-height: 100em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -184,6 +185,7 @@ div.menu,
 #wrapper {
     margin: 0 auto;
     width: 940px;
+
 }
 
 #wrapper {
